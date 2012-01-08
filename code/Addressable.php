@@ -152,6 +152,17 @@ class Addressable extends DataObjectDecorator {
 
 	}
 
+	public function Address() {
+		return $this->getLocalisedFullAddressHTML();
+	}
+
+	/**
+	 * Returns the full address in a simple HTML template.
+	 *
+	 * @return string
+	 */
+	public function getLocalisedFullAddressHTML() {
+		return $this->owner->renderWith(array('Address_'.$this->owner->Country,'Address'));
 	}
 
 	/**
