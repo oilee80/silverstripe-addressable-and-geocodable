@@ -206,7 +206,8 @@ class Addressable extends DataObjectDecorator {
 	 * @return bool
 	 */
 	public function isAddressChanged($level = 1) {
-		$fields  = array('Address', 'Suburb', 'State', 'Postcode', 'Country');
+
+		$fields  = array('Address1','Address2','City','Region','Postcode','Country');
 		$changed = $this->owner->getChangedFields(false, $level);
 
 		foreach ($fields as $field) {
