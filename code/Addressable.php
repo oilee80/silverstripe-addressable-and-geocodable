@@ -89,7 +89,7 @@ class Addressable extends DataObjectDecorator {
 			new TextField('City', _t('Addressable.CITY', 'Town/City'))
 		);
 	
-		$label = _t('Addressable.STATE', 'Country/State');
+		$label = _t('Addressable.STATE', 'County/State');
 		if (is_array($this->allowedStates)) {
 			$fields[] = new DropdownField('Region', $label, $this->allowedStates);
 		} elseif (!is_string($this->allowedStates)) {
