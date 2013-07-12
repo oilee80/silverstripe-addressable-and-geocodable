@@ -20,8 +20,8 @@ class LatLng extends DBField implements CompositeDBField {
 	 * @var array $composite_db
 	 */
 	static $composite_db = array(
-		'Lat'    => 'Float(10,7)',
-		'Lng'    => 'Float(10,7)',
+		'Lat'    => 'Double',
+		'Lng'    => 'Double',
 		'IsManuallySet' => 'Boolean',
 	);
 
