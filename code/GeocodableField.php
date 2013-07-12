@@ -53,8 +53,8 @@ class GeocodableField extends FormField {
 
 		Requirements::javascript("https://www.google.com/jsapi");
 		Requirements::javascript(THIRDPARTY_DIR . '/jquery-livequery/jquery.livequery.js');
-		Requirements::javascript("addressable/javascript/GeocodableField.js");
-		Requirements::css("addressable/css/GeocodableField.css");
+		Requirements::javascript("addressable_new/javascript/GeocodableField.js");
+		Requirements::css("addressable_new/css/GeocodableField.css");
 
 		$shouldUseStartLatLng = !($this->value->Lat || $this->value->Lng);
 
