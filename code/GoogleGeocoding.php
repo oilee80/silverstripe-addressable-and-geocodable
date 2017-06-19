@@ -6,7 +6,7 @@
  */
 class GoogleGeocoding {
 
-	const API_URL = 'http://maps.googleapis.com/maps/api/geocode/xml';
+	const API_URL = 'https://maps.googleapis.com/maps/api/geocode/xml';
 
 	/**
 	 * Convert an address into a latitude and longitude.
